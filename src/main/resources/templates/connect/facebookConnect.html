@@ -3,25 +3,42 @@
     <link rel="stylesheet" type="text/css"
           th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css}" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
-    <title>Spring Boot Facebook Application</title>
+    <title>Post-Cross : Connexion aux réseaux</title>
 </head>
 
-<body>
+<body id="background" style=" background-size: cover;  background-repeat: no-repeat; background-image: url('https://res.cloudinary.com/disggente/image/upload/v1576239407/cool-background_ewedqk.png');">
+
 <div class="container">
     <div class="row">
-        <div class="col-lg-12 text-center">
-            <!--<h1 class="mt-5">Connect to Facebook:</h1>
-            <p class="lead">By clicking connect, you will be asked to authorize the application.</p>-->
+        <div style="color: white;" class="col-lg-12 text-center">
+            <p> </p>
+            <h1 class=""mt-5> Bienvenue sur Post-Cross </h1>
+            <p> </p>
+
+            <h3 class="mt-3">Connectez-vous à tous vos réseaux !</h3>
+            <p class="lead">Vous pourrez ensuite y publier <i class="fab fa-angellist"></i></p>
+
+
 
             <form action="/connect/facebook" method="POST">
                 <input type="hidden" name="scope" value="user_posts"/>
-
-
-                <button class="btn btn-primary btn-lg" type="submit"><i class="fa fa-facebook-square"><span class="ml-4">Connectez-vous à Facebook</span></i></button>
-
+                <button  class="btn btn-primary" type="submit"><i class="fab fa-facebook-square"></i><span class="ml-4">Connectez-vous à Facebook</span></button>
             </form>
+
+            <button  class="btn btn-danger" disabled="disabled"><i class="fab fa-instagram"></i><span class="ml-4">Connectez-vous à Instagram</span></button>
+            <p> </p>
+            <button  class="btn btn-success" disabled="disabled"><i class="fab fa-flickr"></i><span class="ml-4">Connectez-vous à Flickr</span></button>
+            <p></p>
+            <button  class="btn btn-primary" disabled="disabled"><i class="fab fa-linkedin"></i><span class="ml-4">Connectez-vous à LinkedIn</span></button>
+            <p> </p>
+            <button  class="btn btn-info" disabled="disabled"><i class="fab fa-twitter-square"></i><span class="ml-4">  Connectez-vous à Twitter   </span></button>
+            <p></p>
+            <button  class="btn btn-success" disabled="disabled"><i class="fab fa-tumblr-square"></i><span class="ml-4">Connectez-vous à Tumblr</span></button>
+            <p></p>
+            <button  class="btn btn-danger" disabled="disabled"><i class="fab fa-pinterest-square"></i><span class="ml-4">Connectez-vous à Pinterest</span></button>
+
 
         </div>
     </div>
