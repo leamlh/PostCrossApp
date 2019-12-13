@@ -3,7 +3,7 @@
     <link rel="stylesheet" type="text/css"
           th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
 
-    <link href="../static/css/bootstrap-social.css" th:href="@{/css/bootstrap-social.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <title>Spring Boot Facebook Application</title>
 </head>
@@ -18,11 +18,12 @@
             <form action="/connect/facebook" method="POST">
                 <input type="hidden" name="scope" value="user_posts"/>
 
-                <button class="btn btn-default" type="submit">Connect</button>
+
+                <button class="btn btn-primary btn-lg" type="submit"><i class="fa fa-facebook-square"><span class="ml-2"> - Connect</span></i></button>
+                <!--<i class="fa fa-facebook-square"></i>-->
+
             </form>
-            <a class="btn btn-block btn-social btn-twitter">
-                <span class="fa fa-twitter"></span> Sign in with Twitter
-            </a>
+
         </div>
     </div>
 </div>
